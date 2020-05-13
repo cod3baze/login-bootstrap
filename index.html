@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lgoin MODEL</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!--  relecionando -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./Css/style.css'>
+    <link rel="stylesheet" href="./node_modules/bootstrap/compiler/bootstrap.css">
+
+    <script src="./javascript/script.js"></script>
+
+</head>
+<body>
+    <!--  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Encode</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#encode" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="encode">
+
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Code <span class="sr-only">(página atual)</span></a>
+                </li>
+
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tema
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <a class="dropdown-item active" href="#">Light</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Dark</a>
+
+                    </div>
+
+                </li>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div style="margin-bottom: 100px;">
+            <hr>
+        </div>
+        <div class="card ml-auto mr-auto" id="cartao">
+            
+            <form method="GET" action="./php/action.html">
+
+                <div>
+                    <br>
+                    <div class="text-center font-weight-bolder">Entrar no Acess</div>
+                    <hr>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-9 ml-auto mr-auto">
+                        <br>
+                        <div class="form-group ">
+                            <input type="email" name="eml" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Insira o Seu email" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-9 ml-auto mr-auto">
+                        <div class="form-group">
+                            <input type="password" name="psw" class="form-control" id="inputPassword" placeholder="Insira a Senha correspondente" required>
+
+                        </div>
+                        
+                        <div class="form-group form-check">
+                            
+                            <div class="row ml-1">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Salvar</label>
+
+                                <a class="link" id="lnk" href="#">Esqueceste-te da conta?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <button type="submit" id="bnt" class="btn btn-light btn-block">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <div>
+
+        <!-- Optional javascript -->
+        <!-- jquery first, them popper, then bootstrap JS -->
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    </div>
+</body>
+</html>   
